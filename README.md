@@ -1,3 +1,6 @@
+Link to Steam Version: 
+https://steamcommunity.com/sharedfiles/filedetails/?id=3670074003
+
 On Windows, place an uncompressed copy of the ".\Worthy AI\" directory and subdirectories into your Mods directory: 
 .\Documents\Proxy Studios\Gladius\Mods
 
