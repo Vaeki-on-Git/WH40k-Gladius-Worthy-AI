@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Traits/Homing" visible="1" alwaysVisible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/></player>
+				<unit match="Any">
+					<unitsInRange range="2" count="1">
+						<allied/>
+						<type name="SistersOfBattle/Headquarters"/>
+					</unitsInRange>
+					<unitsInRange range="2" count="1">
+						<allied/>
+						<type name="Tyranids/Headquarters"/>
+					</unitsInRange>
+					<unitsInRange range="4" count="1">
+						<allied/>
+						<trait name="Headquarters"/>
+						<noType name="Tyranids/Headquarters"/>
+						<noType name="SistersOfBattle/Headquarters"/>
+					</unitsInRange>
+					<unitsInRange range="5" count="1">
+						<allied/>
+						<type name="SpaceMarines/Headquarters"/>
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

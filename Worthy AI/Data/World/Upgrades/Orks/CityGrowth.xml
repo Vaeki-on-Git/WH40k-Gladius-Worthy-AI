@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="5" icon="Traits/Orks/CityGrowth">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseLoyaltyScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

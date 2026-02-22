@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Actions/TheFleshIsWeak" visible="0" alwaysVisible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/></player>
+				<unit>
+					<unitsInRange range="4" count="0">
+						<enemy/>
+						<noTrait name="Invulnerable"/>
+						<noType name="Eldar/WebwayGate"/>
+					</unitsInRange>
+					<hitpointsFraction less="0.95"/>
+					<noTrait name="Worthy/Ai_newborn"/>
+				</unit>
+				<unit match="Any">
+					<trait name="Forest"/>
+					<trait name="ImperialRuin"/>
+					<trait name="Outpost"/>
+					<trait name="City"/>
+				</unit>
+			</conditions>
+			<effects>
+				<movementMax max="0"/>
+			</effects>
+		</modifier>
+	</modifiers>
+</trait>

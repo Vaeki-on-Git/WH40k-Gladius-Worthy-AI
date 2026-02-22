@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="4" icon="Buildings/SistersOfBattle/Construction">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseConstructionScore base="0"/>
+<increaseAircraftScore base="0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

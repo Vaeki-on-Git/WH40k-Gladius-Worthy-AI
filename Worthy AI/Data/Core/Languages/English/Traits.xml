@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+	<!-- weapons flags--> 
+	<entry name="WorthyWeapons/Ai_disarm" value="Ai Disarm"/>
+	<entry name="WorthyWeapons/Ai_disarmDescription" value="Replaced with Worthy AI Weapon"/>
+
+	<entry name="WorthyWeapons/Pc_disarm" value="Player Disarm"/>
+	<entry name="WorthyWeapons/Pc_disarmDescription" value="Swapping Weapon for Worthy AI"/>
+
+	<entry name="WorthyTactics/Ai_2bolter99" value="Ai_2bolter99"/>
+	<entry name="WorthyTactics/Ai_2despair99" value="Ai_2despair99"/>
+	<entry name="WorthyTactics/Ai_2endanger99" value="Ai_2endanger99"/>
+	<entry name="WorthyTactics/Ai_2hotgun99" value="Ai_2hotgun99"/>
+	<entry name="WorthyTactics/Ai_2triage99" value="Ai_2triage99"/>
+	<entry name="WorthyTactics/Ai_angelicfaith" value="Ai_angelicfaith"/>
+	<entry name="WorthyTactics/Ai_bolter_ready" value="Ai_bolter_ready"/>
+	<entry name="WorthyTactics/Ai_bolters" value="Ai_bolters"/>
+	<entry name="WorthyTactics/Ai_chase_ready" value="Ai_chase_ready"/>
+	<entry name="WorthyTactics/Ai_conviction_ready" value="Ai_conviction_ready"/>
+	<entry name="WorthyTactics/Ai_crusade_ready" value="Ai_crusade_ready"/>
+	<entry name="WorthyTactics/Ai_despair" value="Ai_despair"/>
+	<entry name="WorthyTactics/Ai_endanger" value="Ai_endanger"/>
+	<entry name="WorthyTactics/Ai_hotguns" value="Ai_hotguns"/>
+	<entry name="WorthyTactics/Ai_mobilise_ready" value="Ai_mobilise_ready"/>
+	<entry name="WorthyTactics/Ai_purify_ready" value="Ai_purify_ready"/>
+	<entry name="WorthyTactics/Ai_rage_ready" value="Ai_rage_ready"/>
+	<entry name="WorthyTactics/Ai_vengeful_ready" value="Ai_vengeful_ready"/>
+	<entry name="WorthyTactics/Ai_vigor_ready" value="Ai_vigor_ready"/>
+	<entry name="WorthyTactics/Ai_warmachine_ready" value="Ai_warmachine_ready"/>
+
+
+</language>

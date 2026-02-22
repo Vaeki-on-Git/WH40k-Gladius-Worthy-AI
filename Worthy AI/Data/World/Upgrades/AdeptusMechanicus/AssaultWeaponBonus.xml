@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="4" icon="Traits/WeaponBonus">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseAircraftScore base="0.8"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

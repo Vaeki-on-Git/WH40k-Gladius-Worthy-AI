@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="4" icon="Traits/AdeptusMechanicus/LucianSpecialisation">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseOreScore base="0.8"/>
+<increaseResearchScore base="0.8"/>
+<increaseFoodScore base="0.8"/>
+<increaseInfluenceScore base="0.8"/>
+<increaseEnergyScore base="0.8"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

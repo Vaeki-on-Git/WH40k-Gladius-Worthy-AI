@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="10" icon="Units/SistersOfBattle/CerastusKnightLancer">
+	<requiredUpgrades>
+		<upgrade name="SistersOfBattle/Auxiliaries"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseVehiclesScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

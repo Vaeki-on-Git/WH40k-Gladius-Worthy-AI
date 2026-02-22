@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="8" icon="Units/Orks/Gorkanaut">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

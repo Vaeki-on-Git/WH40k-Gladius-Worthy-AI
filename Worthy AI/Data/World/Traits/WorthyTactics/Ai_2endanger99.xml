@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Actions/SistersOfBattle/VengefulSpirit"  visible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/></player>
+				<unit match="Any">
+					<unitsInRange count="2" range="199">
+						<affiliate/>
+						<trait name="WorthyTactics/Ai_endanger"/>
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

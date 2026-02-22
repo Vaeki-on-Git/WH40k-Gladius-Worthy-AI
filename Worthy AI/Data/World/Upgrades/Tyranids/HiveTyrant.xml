@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="3" icon="Units/Tyranids/HiveTyrant">
+	<requiredUpgrades>
+		<upgrade name="Tyranids/Heroes"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseHeroesScore base="1.2"/>
+<increaseSupportScore base="1.2"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

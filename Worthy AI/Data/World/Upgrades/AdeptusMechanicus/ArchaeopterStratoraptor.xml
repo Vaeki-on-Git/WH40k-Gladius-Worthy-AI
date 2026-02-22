@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="8" icon="Units/AdeptusMechanicus/ArchaeopterStratoraptor">
+	<requiredUpgrades>
+		<upgrade name="AdeptusMechanicus/Aircraft"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseAircraftScore base="1"/>
+<increaseSupportScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

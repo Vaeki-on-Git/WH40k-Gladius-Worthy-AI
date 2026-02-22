@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade dlc="Supplement15" position="3" icon="Units/SpaceMarines/PrimarisInvaderATV">
+	<requiredUpgrades>
+		<upgrade name="SpaceMarines/Vehicles"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseVehiclesScore base="0.95"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

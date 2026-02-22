@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Traits/HarvestResourceFeatures" category="Debuff" visible="0">
+	<modifiers>
+		<modifier>
+			<conditions match="All">
+				<player><aiControlled/></player>
+				<encounter>
+					<self>
+						<hitpointsFraction greater="0.6"/>
+					</self> 
+				</encounter> 
+			</conditions>
+			<effects>
+				<accuracy min="-999" max="-999"/>
+			</effects>
+		</modifier>
+	</modifiers>
+</trait>
+
+
+

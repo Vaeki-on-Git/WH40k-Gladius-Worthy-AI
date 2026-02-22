@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait visible="0" icon="Traits/Unique">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<unit>
+					<enemyMajorityInRange range="4"/>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

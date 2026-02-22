@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="2" icon="Units/Orks/Weirdboy">
+	<requiredUpgrades>
+		<upgrade name="Orks/Heroes"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseSupportScore base="0"/>
+<increaseHeroesScore base="0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

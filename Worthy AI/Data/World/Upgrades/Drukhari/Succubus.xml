@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="2" icon="Units/Drukhari/Succubus">
+	<requiredUpgrades>
+		<upgrade name="Drukhari/Heroes"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseHeroesScore base="0"/>
+<increaseSupportScore base="0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

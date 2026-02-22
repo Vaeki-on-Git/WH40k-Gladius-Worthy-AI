@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="4" icon="Buildings/SpaceMarines/Construction">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseConstructionScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="6">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfluenceScore base="1.2"/>
+<increaseOreScore base="1.2"/>
+<increaseLoyaltyScore base="1.2"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

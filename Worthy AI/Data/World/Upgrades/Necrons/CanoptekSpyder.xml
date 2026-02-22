@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="3" icon="Units/Necrons/CanoptekSpyder">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseColonizersScore base="1.2"/>
+<increaseSupportScore base="0"/>
+<increaseInfantryScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

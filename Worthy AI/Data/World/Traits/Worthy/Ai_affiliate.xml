@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Traits/HarvestResourceFeatures" category="Debuff" alwaysColored="1" visible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/></player>
+				<unit><affiliate/></unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>
+
+
+

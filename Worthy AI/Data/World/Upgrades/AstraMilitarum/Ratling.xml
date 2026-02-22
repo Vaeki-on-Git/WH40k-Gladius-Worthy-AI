@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade dlc="Supplement8" position="1" icon="Units/AstraMilitarum/Ratling">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

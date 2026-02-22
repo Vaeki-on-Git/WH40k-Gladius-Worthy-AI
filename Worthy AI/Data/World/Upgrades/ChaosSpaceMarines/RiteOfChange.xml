@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="1" icon="Actions/ChaosSpaceMarines/RiteOfChange">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseVehiclesScore base="0.9"/>
+<increaseAircraftScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

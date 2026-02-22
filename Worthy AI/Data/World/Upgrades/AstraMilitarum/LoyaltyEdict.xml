@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="10" icon="Actions/AstraMilitarumLoyaltyEdict">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseLoyaltyScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

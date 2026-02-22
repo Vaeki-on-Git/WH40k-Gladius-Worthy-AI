@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="7" icon="Units/Necrons/SkorpekhDestroyer" dlc="Supplement14">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

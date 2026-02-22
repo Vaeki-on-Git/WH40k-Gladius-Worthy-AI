@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="10" icon="Actions/AdeptusMechanicus/IncantationOfTheIronSoul">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="0.8"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

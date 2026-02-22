@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="2" icon="Units/SistersOfBattle/Imagifier" dlc="Supplement12">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseSupportScore base="0"/>
+<increaseInfantryScore base="0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

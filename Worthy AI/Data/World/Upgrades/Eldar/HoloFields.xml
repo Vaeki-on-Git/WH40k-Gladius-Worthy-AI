@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="9" icon="Traits/Eldar/HoloFields">
+	<requiredUpgrades>
+		<upgrade name="Eldar/FirePrism"/>
+		<upgrade name="Eldar/Hornet"/>
+		<upgrade name="Eldar/Vyper"/>
+		<upgrade name="Eldar/WaveSerpent"/>
+	</requiredUpgrades>	
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseVehiclesScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit productionWeight="0.25" spawnDistanceMin="6">
+	<model>
+		<unit mesh="Units/ChaosSpaceMarines/ChaosCultist"
+				material="Units/ChaosSpaceMarines/ChaosCultist"
+				idleAnimation="Units/ChaosSpaceMarines/ChaosCultistIdle"
+				idleAnimationCount="3"
+				idleContinuously="1"
+				normalWeight="0.1"
+				scale="0.8 0.8 0.8"
+				bloodBone="Bone001"
+				walker="1"/>
+	</model>
+	<group size="10" rowSize="5" memberDeltaX="70" memberDeltaY="50"/>
+	<weapons>
+		<weapon name="Autopistol">
+ 			<model>
+				<projectileWeapon mesh="Weapons/ChaosSpaceMarines/Autopistol"
+						material="Units/ChaosSpaceMarines/ChaosCultist"
+						bone="Bone006"
+						muzzleBone=".Muzzle"
+						fireInterval="0.25"/>
+			</model>
+		</weapon>
+		<weapon name="CloseCombatWeapon">
+ 			<model>
+				<weapon fireInterval="0.5"/>
+			</model>
+		</weapon>
+	</weapons>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<armor base="2"/> <!-- %armor base armor=6+ -->
+				<hitpointsMax base="2.0"/> <!-- %hitpointsMax base toughness=3 wounds=1 -->
+				<meleeAccuracy base="6"/> <!-- %meleeAccuracy base weaponSkill=3 -->
+				<meleeAttacks base="1"/>
+				<strengthDamage base="1"/> <!-- %strengthDamage base strength=3 -->
+				<!-- <meleeInitiative base="3"/> -->
+				<moraleMax base="4"/> <!-- %moraleMax base leadership=5 -->
+				<movementMax base="3"/>
+				<productionCost base="24.0"/> <!-- %productionCost base tier=4 factor=1 -->
+				<rangedAccuracy base="6"/> <!-- %rangedAccuracy base ballisticSkill=3 -->
+				<foodUpkeep base="1.0"/> <!-- %foodUpkeep base tier=4 factor=1 -->
+				<foodCost base="10.0"/> <!-- %foodCost base tier=4 factor=0.5 -->
+				<oreCost base="10.0"/> <!-- %oreCost base tier=4 factor=0.5 -->
+			</effects>
+		</modifier>
+	</modifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseColonizersScore base="0"/>
+<increaseInfantryScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+	<actions>
+		<attack>
+			<model>
+				<action animation="Units/ChaosSpaceMarines/ChaosCultistAttack"
+						beginFire="0.7"
+						endFire="1.8"
+						chargeAnimation="Units/ChaosSpaceMarines/ChaosCultistCharge"
+						chargeBeginFire="0.7"
+						chargeEndFire="1.2"
+						meleeAnimation="Units/ChaosSpaceMarines/ChaosCultistMelee"
+						meleeBeginSwing="0.2"
+						meleeEndSwing="0.9"/>
+			</model>
+		</attack>
+		<die>
+			<model>
+				<action animation="Units/ChaosSpaceMarines/ChaosCultistDie"
+						animationCount="2"
+						sound="Units/MediumUnarmoredDie"
+						soundCount="4"
+						soundDelay="0.35"
+						voiceSound="Units/AstraMilitarum/InfantryDie"
+						voiceSoundCount="5"/>
+			</model>
+		</die>
+		<idle>
+			<model>
+				<action/>
+			</model>
+		</idle>
+		<move>
+			<model>
+				<action animation="Units/ChaosSpaceMarines/ChaosCultistMove"
+						sound="Units/AstraMilitarum/InfantryMove"
+						soundCount="4"/>
+			</model>
+		</move>
+		<foundCity>
+			<model>
+				<action animation=""
+						sound="Actions/FoundCity"/>
+			</model>
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="80"/>
+						<oreCost base="80"/>
+					</effects>
+				</modifier>
+				<modifier requiredUpgrade="ChaosSpaceMarines/ChaosRising">
+					<effects>
+						<influenceCost mul="-0.5"/>
+						<oreCost mul="-0.5"/>
+					</effects>
+				</modifier>
+			</modifiers>
+		</foundCity>
+
+		<!-- Player Clear Tile -->
+		<clearTileUnitAbility cooldown="1"
+				icon="Actions/ClearTile"
+				useConditionsForVisiblity="1"
+				name="ClearTile">
+			<model>
+				<action animation="Units/ChaosSpaceMarines/ChaosCultistWork"/>
+			</model>
+			<conditions>
+				<player>
+					<notAIControlled/>
+				</player>
+			</conditions>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions/>
+					<areas/>
+				</target>
+			</beginTargets>
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="5"/>
+						<oreCost base="5"/>
+					</effects>
+				</modifier>
+			</modifiers>
+		</clearTileUnitAbility>	
+		<!-- AI Clear Tile -->
+		<incursion 
+				name="Worthy/ClearTile"
+				icon="Actions/ClearTile"
+				useConditionsForVisiblity="1"
+				cooldown="1">
+			<model>
+				<action animation="Units/ChaosSpaceMarines/ChaosCultistWork"/>
+			</model>
+			<conditions>
+				<player>
+					<aiControlled/>
+					<noFaction name="Neutral"/>
+				</player>
+			</conditions>
+			<modifiers>
+				<!-- prevent AI overuse -->
+				<modifier visible="0">
+					<conditions match="Any">
+						<player>
+							<influence less="85"/>
+						</player>
+						<unit>
+							<noTrait name="Worthy/Ai_alone1"/>
+						</unit>
+					</conditions>
+					<effects>
+						<consumedActionPoints add="99"/>
+					</effects>
+				</modifier>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="5"/>
+						<oreCost base="5"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<tile>
+							<feature name="WireWeed"/>
+							<noEnemyUnit/>
+						</tile>
+					</conditions>
+					<areas>
+						<area affects="Tile">
+							<modifiers>
+								<modifier>
+									<effects>
+										<removeFeature name="WireWeed"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</incursion>
+
+		<!-- Player Cultist Sacrifice -->
+		<cultistSacrifice name="ChaosSpaceMarines/CultistSacrifice"
+				useConditionsForVisiblity="1">
+			<model>
+				<action bone="Bone001" sound="Interface/UnholyRite"/>
+			</model>
+			<conditions>
+				<player>
+					<notAIControlled/>
+				</player>
+			</conditions>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<unit>
+							<allied/>
+							<type name="ChaosSpaceMarines/Headquarters"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="City">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="ChaosSpaceMarines/CultistSacrifice" duration="10"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+			<endTargets>
+				<selfTarget>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<removeUnit/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</endTargets>
+		</cultistSacrifice>
+
+		<!-- AI Cultist Sacrifice -->
+		<singularPurpose 
+				name="Worthy/CultistSacrifice"
+				icon="Actions/ChaosSpaceMarines/CultistSacrifice"
+				useConditionsForVisiblity="1">
+			<model>
+				<action bone="Bone001" sound="Interface/UnholyRite"/>
+			</model>
+			<conditions>
+				<player>
+					<aiControlled/>
+					<noFaction name="Neutral"/>
+				</player>
+				<unit>
+					<trait name="Worthy/Ai_established"/>
+					<trait name="Worthy/Ai_alone3"/>
+				</unit>
+			</conditions>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<unit>
+							<allied/>
+							<type name="ChaosSpaceMarines/Headquarters"/>
+							<noTrait name="Worthy/Ai_deadcultists"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Worthy/Ai_deadcultists" duration="10"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+						<area affects="City">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="ChaosSpaceMarines/CultistSacrifice" duration="10"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+			<endTargets>
+				<selfTarget>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<removeUnit/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</endTargets>
+		</cultistSacrifice>
+
+
+		<!-- Player Crown -->
+		<constructNoctilithCrown icon="Units/ChaosSpaceMarines/NoctilithCrown"
+				requiredUpgrade="ChaosSpaceMarines/NoctilithCrown"
+				useConditionsForVisiblity="1"
+				cooldown="10">
+			<model>
+				<action animation="Units/ChaosSpaceMarines/ChaosCultistWork"
+						sound="Actions/Construct"/>
+			</model>
+			<conditions>
+				<player><notAIControlled/></player>
+			</conditions>
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<energyCost base="20"/>
+						<oreCost base="20"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<tile>
+							<noFeatureCategory name="Resource"/>
+							<noFeatureCategory name="WireWeed"/>
+							<land/>
+							<noEnemyCity/>
+							<noUnit/>
+							<noFeature name="GravityWaves"/>
+						</tile>
+					</conditions>
+					<areas>
+						<area affects="Tile">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addUnit name="ChaosSpaceMarines/NoctilithCrown"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</constructNoctilithCrown>
+
+		<!-- Ai Crown -->
+		<constructNoctilithCrown 
+				name="Worthy/ConstructNoctilithCrown"
+				icon="Units/ChaosSpaceMarines/NoctilithCrown"
+				requiredUpgrade="ChaosSpaceMarines/NoctilithCrown"				
+				useConditionsForVisiblity="1"
+				cooldown="10">
+			<model>
+				<action  animation="Units/ChaosSpaceMarines/ChaosCultistWork"
+						sound="Actions/Construct"/>
+			</model>
+			<conditions>
+				<player>
+					<aiControlled/>
+					<noFaction name="Neutral"/>
+				</player>
+			</conditions>
+			<modifiers>
+				<!-- worthy , stop overuse-->
+				<modifier visible="0">
+					<conditions>
+						<unit match="Any">
+							<noTrait name="Worthy/Ai_2real2"/>
+						</unit>
+					</conditions>
+					<effects>
+						<consumedActionPoints add="99"/>
+					</effects>
+				</modifier>
+				<!-- / -->
+				<modifier visible="0">
+					<effects>
+						<energyCost base="20"/>
+						<oreCost base="20"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<tile>
+							<noFeatureCategory name="Resource"/>
+							<noFeatureCategory name="WireWeed"/>
+							<land/>
+							<noEnemyCity/>
+							<noUnit/>
+							<noFeature name="GravityWaves"/>
+						</tile>
+					</conditions>
+					<areas>
+						<area affects="Tile">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addUnit name="ChaosSpaceMarines/NoctilithCrown"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</constructNoctilithCrown>
+
+
+	
+	</actions>
+
+	<traits>
+		<trait name="ChaosSpaceMarines/ChampionOfChaos"/>
+		<trait name="ExtraInfantryArmour" requiredUpgrade="ChaosSpaceMarines/ExtraInfantryArmour"/>
+	
+
+		<trait name="Worthy/Ai_disposable"/>
+	
+		<trait name="Worthy/Ai_alone1"/>
+		<trait name="Worthy/Ai_alone3"/>
+		<trait name="Worthy/Ai_established"/>
+
+		<trait name="Worthy/Ai_2real2"/>
+		<trait name="Worthy/Ai_mark1"/>
+	
+	</traits>
+
+</unit>

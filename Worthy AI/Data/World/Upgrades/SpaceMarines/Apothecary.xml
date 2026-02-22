@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="5" icon="Units/SpaceMarines/Apothecary">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseSupportScore base="1"/>
+<increaseInfantryScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="3" icon="Units/ChaosSpaceMarines/Warpsmith">
+	<requiredUpgrades>
+		<upgrade name="ChaosSpaceMarines/Heroes"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseHeroesScore base="1"/>
+<increaseSupportScore base="0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

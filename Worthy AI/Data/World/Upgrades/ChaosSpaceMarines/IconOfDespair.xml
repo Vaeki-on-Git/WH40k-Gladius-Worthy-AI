@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="8" icon="Actions/ChaosSpaceMarines/IconOfDespair">
+	<requiredUpgrades>
+		<upgrade name="ChaosSpaceMarines/MarkOfNurgle"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseHeroesScore base="1"/>
+<increaseInfantryScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

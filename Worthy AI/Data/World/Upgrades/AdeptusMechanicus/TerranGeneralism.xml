@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="10" icon="Traits/AdeptusMechanicus/TerranGeneralism">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryProductionScore base="0.9"/>
+<increaseVehiclesProductionScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

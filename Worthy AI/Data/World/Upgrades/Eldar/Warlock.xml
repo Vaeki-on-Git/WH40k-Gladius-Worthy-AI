@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade dlc="Supplement8" position="5" icon="Units/Eldar/Warlock">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

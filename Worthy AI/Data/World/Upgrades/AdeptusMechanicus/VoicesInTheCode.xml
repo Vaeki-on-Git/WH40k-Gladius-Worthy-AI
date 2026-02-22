@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="5" icon="Actions/AdeptusMechanicus/VoicesInTheCode">
+	<requiredUpgrades>
+		<upgrade name="AdeptusMechanicus/SicarianInfiltrator"/>
+		<upgrade name="AdeptusMechanicus/SicarianRuststalker"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="0.8"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

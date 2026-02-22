@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="8" icon="Units/Orks/BurnaBommer">
+	<requiredUpgrades>
+		<upgrade name="Orks/Vehicles"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseAircraftScore base="0.8"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

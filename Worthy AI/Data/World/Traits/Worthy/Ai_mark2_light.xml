@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Traits/Homing" visible="0" alwaysVisible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/></player>
+				<unit>
+					<unitsInRange count="1" range="2">
+						<enemy/>
+						<noTrait name="Invulnerable"/>
+						<!-- opponent is healthy AND ... --> 	
+						<hitpointsFraction greater="0.2"/>
+						<!-- opponent is NOT classed heavy/solo ... --> 	
+						<noTrait name="Vehicle"/>
+						<noTrait name="Hero"/>
+						<noTrait name="MonstrousCreature"/>
+						<noTrait name="SuperHeavy"/>
+						<noTrait name="Fortification"/>
+						<noTrait name="VeryBulky"/>
+					</unitsInRange>
+				</unit> 
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade dlc="Supplement8" position="9" icon="Actions/SpaceMarines/Omniscope">
+	<requiredUpgrades>
+		<upgrade name="SpaceMarines/DevastatorCenturion"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

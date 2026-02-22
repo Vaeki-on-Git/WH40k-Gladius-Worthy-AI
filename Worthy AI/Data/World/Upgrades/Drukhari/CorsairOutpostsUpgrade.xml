@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="7" icon="Traits/Drukhari/CorsairOutposts">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increasePopulationLimitScore base="0.8"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

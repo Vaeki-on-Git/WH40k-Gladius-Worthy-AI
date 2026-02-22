@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Features/Volcanic" visible="0" alwaysVisible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/><noFaction name="Neutral"/></player>
+				<unit>
+					<unitsInRange range="5" count="0">
+						<enemy/>
+						<noTrait name="Invulnerable"/>
+						<noTrait name="Fortification"/>
+						<noType  name="Eldar/WebwayGate"/>
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

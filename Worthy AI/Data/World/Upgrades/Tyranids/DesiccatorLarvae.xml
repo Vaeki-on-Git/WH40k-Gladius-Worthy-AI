@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="7" icon="Weapons/DesiccatorLarvae">
+	<requiredUpgrades>
+		<upgrade name="Tyranids/HiveTyrant"/>
+		<upgrade name="Tyranids/Tervigon"/>
+		<upgrade name="Tyranids/Tyrannofex"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseHeroesScore base="0.9"/>
+<increaseVehiclesScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="8" icon="Traits/Tyranids/AcidBlood">
+	<requiredUpgrades>
+		<upgrade name="Tyranids/Aircraft"/>
+		<upgrade name="Tyranids/Heroes"/>
+		<upgrade name="Tyranids/Vehicles"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="0.8"/>
+<increaseVehiclesScore base="0.8"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

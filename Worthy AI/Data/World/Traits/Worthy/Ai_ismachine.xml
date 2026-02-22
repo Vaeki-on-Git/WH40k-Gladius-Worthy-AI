@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Traits/Vehicle" visible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<unit match="Any">
+					<trait name="Fortification"/>
+					<trait name="Vehicle"/>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

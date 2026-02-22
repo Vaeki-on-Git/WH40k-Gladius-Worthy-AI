@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="4" icon="Units/ChaosSpaceMarines/DaemonPrince">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseHeroesScore base="1"/>
+<increaseSupportScore base="0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

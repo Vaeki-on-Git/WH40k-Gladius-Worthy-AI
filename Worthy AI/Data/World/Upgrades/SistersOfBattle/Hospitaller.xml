@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="3" icon="Units/SistersOfBattle/Hospitaller">
+	<requiredUpgrades>
+		<upgrade name="SistersOfBattle/Heroes"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseColonizersScore base="0"/>
+<increaseSupportScore base="0"/>
+<increaseHeroesScore base="1.5"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

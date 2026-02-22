@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Traits/Homing" visible="0" alwaysVisible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/></player>
+				<weapon match="Any">
+					<trait name="Melta"/>
+					<trait name="Flame"/>
+				</weapon>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

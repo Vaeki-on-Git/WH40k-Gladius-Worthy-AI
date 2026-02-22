@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait category="Debuff" icon="Actions/ClearTile" visible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/><noFaction name="Neutral"/></player>
+				<unit>
+					<unitsInRange count="0" range="1">
+						<enemy/>
+						<noType name="Eldar/WebwayGate"/>
+						<noTrait name="Invulnerable"/>
+					</unitsInRange>
+				</unit>
+			</conditions>
+			<effects/>
+		</modifier>
+	</modifiers>
+</trait>

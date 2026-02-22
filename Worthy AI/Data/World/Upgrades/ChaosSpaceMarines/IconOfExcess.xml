@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="9" icon="Actions/ChaosSpaceMarines/IconOfExcess">
+	<requiredUpgrades>
+		<upgrade name="ChaosSpaceMarines/MarkOfSlaanesh"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseHeroesScore base="0"/>
+<increaseInfantryScore base="0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

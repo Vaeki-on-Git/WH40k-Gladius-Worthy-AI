@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="6" icon="Traits/ChaosSpaceMarines/VeteransOfTheLongWar">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseHeroesScore base="0.25"/>
+<increaseInfantryScore base="0.25"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

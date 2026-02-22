@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="2" icon="Traits/AdeptusMechanicus/XenariteAcceptance">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseResearchScore base="0.8"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

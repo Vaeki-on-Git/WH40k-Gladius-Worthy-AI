@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit dlc="Supplement9">
+	<model>
+		<unit mesh="Units/AdeptusMechanicus/TechPriestManipulus"
+				material="Units/AdeptusMechanicus/TechPriestManipulus"
+				idleAnimation="Units/AdeptusMechanicus/TechPriestManipulusIdle"
+				idleAnimationCount="3"
+				idleContinuously="1"
+				normalWeight="0.1"
+				scale="1 1 1"
+				bloodBone="Chest"
+				walker="1"/>
+	</model>
+	<weapons>
+		<weapon name="MagnarailLance">
+			<model>
+				<beamWeapon muzzleBone="Muzzle" fireInterval="0.67"/>
+			</model>
+		</weapon>
+		<weapon name="ManipulusMechadendrites">
+			<model>
+				<weapon fireInterval="10.0"/>
+			</model>
+		</weapon>
+		<weapon name="OmnissianStaff">
+			<model>
+				<powerWeapon effectBone="Stick" fireInterval="10.0" fireDelay="0.3"/>
+			</model>
+		</weapon>
+	</weapons>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<armor base="8"/> <!-- %armor base armor=3+ -->
+				<energyCost base="30.0"/> <!-- %energyCost base tier=7 factor=0.5 -->
+				<foodCost base="30.0"/> <!-- %foodCost base tier=7 factor=0.5 -->
+				<foodUpkeep base="3.0"/> <!-- %foodUpkeep base tier=7 factor=1 -->
+				<hitpointsMax base="6.0"/> <!-- %hitpointsMax base toughness=4 wounds=2 -->
+				<influenceUpkeep base="6.0"/> <!-- %influenceUpkeep base tier=7 factor=2 -->
+				<influenceCost base="120.0"/> <!-- %influenceCost base tier=7 factor=2 -->
+				<itemSlots base="6"/>
+				<levelMax base="9"/>
+				<meleeAccuracy base="8"/> <!-- %meleeAccuracy base weaponSkill=4 -->
+				<meleeAttacks base="1"/>
+				<strengthDamage base="1.5"/> <!-- %strengthDamage base strength=4 -->
+				<moraleMax base="12"/> <!-- %moraleMax base leadership=9 -->
+				<movementMax base="3"/>
+				<productionCost base="42.0"/> <!-- %productionCost base tier=7 factor=1 -->
+				<rangedAccuracy base="10"/> <!-- %rangedAccuracy base ballisticSkill=5 -->
+			</effects>
+		</modifier>
+	</modifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseHeroesScore base="1"/>
+<increaseSupportScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+	<actions>
+		<attack>
+			<model>
+				<action animation="Units/AdeptusMechanicus/TechPriestManipulusAttack"
+						beginFire="0.67"
+						endFire="2.1"
+						chargeAnimation="Units/AdeptusMechanicus/TechPriestManipulusCharge"
+						chargeBeginFire="0.6"
+						chargeEndFire="1.4"
+						meleeAnimation="Units/AdeptusMechanicus/TechPriestManipulusMelee"
+						meleeBeginSwing="0.3"
+						meleeEndSwing="0.5"/>
+			</model>				
+		</attack>
+		<die>
+			<model>
+				<action animation="Units/AdeptusMechanicus/TechPriestManipulusDie0"
+						sound="Units/MediumArmoredDie"
+						soundCount="4"
+						soundDelay="1"
+						voiceSound="Units/AdeptusMechanicus/TechPriestManipulusVoiceDie"
+						voiceSoundCount="1"/>
+			</model>		
+		</die>
+		<idle>
+			<model>
+				<action animationSpeed="1.0"/>
+			</model>
+		</idle>
+		<move>
+			<model>
+				<action animation="Units/AdeptusMechanicus/TechPriestManipulusMove"
+						sound="Units/Neutral/UmbraMove"
+						soundCount="1"/>
+			</model>
+		</move>
+
+		<!-- player version -->
+		<masterOfMachines cooldown="1"
+				name="AdeptusMechanicus/MasterOfMachines"
+				useConditionsForVisiblity="1"
+				consumedActionPoints="1">
+			<model>
+				<action animation="Units/AdeptusMechanicus/TechPriestManipulusAbility"
+						sound="Actions/Heal"/>
+			</model>
+			<!-- worthy -->
+			<conditions>
+				<unit>
+					<noTrait name="Worthy/Ai_player"/>
+				</unit>
+			</conditions>			
+			<beginTargets>
+				<target rangeMin="1" rangeMax="1">
+					<conditions>
+						<unit>
+							<allied/>
+							<damaged/>
+						</unit>
+						<unit match="Any">
+							<faction name="AdeptusMechanicus"/>
+							<trait name="Fortification"/>
+							<trait name="Vehicle"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<hitpoints add="6"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+
+			</beginTargets>
+		</masterOfMachines>
+
+		<!-- ai version -->
+		<masterOfMachines cooldown="1"
+
+				name="Worthy/MasterOfMachines"
+				icon="Actions/AdeptusMechanicus/MasterOfMachines"
+				useConditionsForVisiblity="1"
+				consumedActionPoints="0">
+			<model>
+				<action animation="Units/AdeptusMechanicus/TechPriestManipulusAbility"
+						sound="Actions/Heal"/>
+			</model>
+			<!-- worthy -->
+			<conditions>
+				<unit>
+					<trait name="Worthy/Ai_player"/>
+				</unit>
+			</conditions>			
+			<!-- dont use in wireweed, unless no choice --> 
+			<modifiers> 
+				<modifier visible="0">
+					<conditions>
+						<unit>
+							<movement greater="0"/>
+							<trait name="WireWeed"/>
+						</unit>
+					</conditions>
+					<effects>
+						<consumedActionPoints add="99"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<target rangeMin="1" rangeMax="1">
+					<conditions>
+						<unit>
+							<allied/>
+							<damaged/>
+						</unit>
+						<unit match="Any">
+							<faction name="AdeptusMechanicus"/>
+							<trait name="Fortification"/>
+							<trait name="Vehicle"/>
+						</unit>
+						<!-- WORTHY -->
+						<unit>
+							<hitpointsFraction less="0.8"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<hitpoints add="6"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+				<!-- worthy -->
+				<selfTarget>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier visible="0">
+									<effects>
+										<actionPoints add="-1"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</masterOfMachines>
+
+		<!-- player version -->
+		<techAdept cooldown="1"
+				name="AdeptusMechanicus/TechAdept"
+				
+				consumedActionPoints="1"
+				levelUpPriority="0"
+				
+				rank="-1" 
+				rankMax="2">
+			<model>
+				<action animation="Units/AdeptusMechanicus/TechPriestManipulusAbility"
+						sound="Actions/TechAdept"/>
+			</model>
+			<beginTargets>
+				<target rangeMin="1" rangeMax="1">
+					<conditions>
+						<unit>
+							<allied/>
+							<damaged/>
+						</unit>
+						<unit match="Any">
+							<faction name="AdeptusMechanicus"/>
+							<trait name="Fortification"/>
+							<trait name="Vehicle"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<hitpoints addMin="12" addMax="24"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</techAdept>
+		<!-- ai version -->
+		<techAdept cooldown="1"
+
+				name="Worthy/TechAdept"
+				icon="Actions/AdeptusMechanicus/TechAdept"
+				consumedActionPoints="0"
+				levelUpPriority="1"
+				useConditionsForVisiblity="1"
+
+				rank="-1" 
+				rankMax="2">
+			<model>
+				<action animation="Units/AdeptusMechanicus/TechPriestManipulusAbility"
+						sound="Actions/TechAdept"/>
+			</model>
+			<conditions>
+				<unit>
+					<trait name="Worthy/Ai_player"/>
+				</unit>
+			</conditions>
+			<!-- dont use in wireweed, unless no choice --> 
+			<modifiers> 
+				<modifier visible="0">
+					<conditions>
+						<unit>
+							<movement greater="0"/>
+							<trait name="WireWeed"/>
+						</unit>
+					</conditions>
+					<effects>
+						<consumedActionPoints add="99"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<target rangeMin="1" rangeMax="1">
+					<conditions>
+						<unit>
+							<allied/>
+							<damaged/>
+						</unit>
+						<unit match="Any">
+							<faction name="AdeptusMechanicus"/>
+							<trait name="Fortification"/>
+							<trait name="Vehicle"/>
+						</unit>
+						<!-- WORTHY -->
+						<unit>
+							<hitpointsFraction less="0.8"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<hitpoints addMin="12" addMax="24"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+				<!-- WORTHY -->
+				<selfTarget>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier visible="0">
+									<effects>
+										<actionPoints add="-1"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</techAdept>
+
+		<galvanicField cooldown="3"
+				name="AdeptusMechanicus/GalvanicField"
+				levelUpPriority="1.25"
+				rank="-1" 
+				rankMax="2">
+			<model>
+				<action animation="Units/AdeptusMechanicus/TechPriestManipulusAbility"
+						sound="Actions/GalvanicField"/>
+			</model>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<unit>
+							<allied/>
+							<faction name="AdeptusMechanicus"/>
+						</unit>
+						<!-- worthy -->
+						<unit match="Any">
+							<noTrait name="Worthy/Ai_player"/>
+							<trait name="Worthy/Ai_markX"/>
+						</unit>
+						<!-- worthy -->
+						<unit match="Any">
+							<noTrait name="Worthy/Ai_player"/>
+							<noTrait name="AdeptusMechanicus/GalvanicField"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait duration="2" name="AdeptusMechanicus/GalvanicField"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</galvanicField>
+
+		<!-- player electroshocked -->
+		<electroShocked cooldownMax="1"
+				cooldownMin="3"
+				consumedActionPoints="0"
+				consumedMovement="0"
+				name="AdeptusMechanicus/ElectroShocked"
+				useConditionsForVisiblity="1"
+				levelUpPriority="0"
+				rank="-1" 
+				rankMax="2"
+				requiredActionPoints="0">
+			<model>
+				<action animation="Units/AdeptusMechanicus/TechPriestManipulusAbility"
+						sound="Actions/ElectroShocked"/>
+			</model>
+			<!-- worthy -->
+			<conditions>
+				<unit>
+					<noTrait name="Worthy/Ai_player"/>
+				</unit>
+			</conditions>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<unit>
+							<enemy/>
+							<noTrait name="Fortification"/>
+							<noTrait name="Vehicle"/>
+							<noTrait name="Stunned"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait duration="1" name="Stunned"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</electroShocked>
+
+		<!-- AI electroshocked -->
+		<electroShocked cooldownMax="1"
+				cooldownMin="3"
+				consumedActionPoints="0"
+				consumedMovement="0"
+				name="Worthy/ElectroShocked"
+				icon="Actions/AdeptusMechanicus/ElectroShocked"
+				useConditionsForVisiblity="1"
+				levelUpPriority="1.5"
+				rank="-1" 
+				rankMax="2"
+				requiredActionPoints="0">
+			<model>
+				<action animation="Units/AdeptusMechanicus/TechPriestManipulusAbility"
+						sound="Actions/ElectroShocked"/>
+			</model>
+			<!-- worthy -->
+			<conditions>
+				<unit>
+					<trait name="Worthy/Ai_player"/>
+				</unit>
+			</conditions>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<unit>
+							<enemy/>
+							<noTrait name="Fortification"/>
+							<noTrait name="Vehicle"/>
+							<noTrait name="Stunned"/>
+							<hitpointsFraction greater="0.2"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait duration="1" name="Stunned"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</electroShocked>
+
+
+		<dataBlessedAutosermon cooldown="5"
+				consumedActionPoints="0"
+				consumedMovement="0"
+				elite="1"
+				levelUpPriority="2"
+				name="AdeptusMechanicus/DataBlessedAutosermon"
+				rank="-1"
+				rankMax="0"
+				requiredActionPoints="0">
+			<model>
+				<action animation="Units/AdeptusMechanicus/TechPriestManipulusAbility"
+						sound="Actions/DataBlessedAutosermon"/>
+			</model>
+			<!-- worthy -->
+			<conditions>
+				<unit match="Any">
+					<noTrait name="Worthy/Ai_player"/>
+					<trait name="Worthy/Ai_2co2"/>
+				</unit>
+				<unit match="Any">
+					<noTrait name="Worthy/Ai_player"/>
+					<noTrait name="AdeptusMechanicus/DataBlessedAutosermon"/>
+				</unit>
+			</conditions>
+			<beginTargets>
+				<selfTarget>
+					<areas>
+						<area affects="Unit" radius="3">
+							<modifiers>
+								<modifier>
+									<conditions>
+										<unit>
+											<allied/>
+											<trait name="AdeptusMechanicus/CanticlesOfTheOmnissiah"/>
+										</unit>
+									</conditions>
+									<effects>
+										<addTrait duration="1" name="AdeptusMechanicus/DataBlessedAutosermon"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</dataBlessedAutosermon>
+
+		<levelUp/>
+		<shop/>
+	
+	</actions>
+
+	<traits>
+		<trait name="AdeptusMechanicus/CanticlesOfTheOmnissiah"/>
+		<trait name="ExtraInfantryArmour" requiredUpgrade="AdeptusMechanicus/ExtraInfantryArmour"/>
+		<trait name="FeelNoPain"/>
+		<trait name="Hero"/>
+		<trait name="RefractorField"/>
+		<trait name="Relentless"/>
+	
+		<trait name="Worthy/Ai_mark1"/>
+		<trait name="Worthy/Ai_shortsight1"/>
+	
+	</traits>
+
+</unit>

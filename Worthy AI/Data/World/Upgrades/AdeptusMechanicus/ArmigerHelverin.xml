@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="8" icon="Units/AdeptusMechanicus/ArmigerHelverin" dlc="Supplement17">
+	<requiredUpgrades>
+		<upgrade name="AdeptusMechanicus/Vehicles"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseVehiclesScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

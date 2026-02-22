@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="10" icon="Traits/LocatorBeacon">
+	<requiredUpgrades>
+		<upgrade name="SpaceMarines/OrbitalDeployment"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

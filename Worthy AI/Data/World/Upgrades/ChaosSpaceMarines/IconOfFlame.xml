@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="10" icon="Actions/ChaosSpaceMarines/IconOfFlame">
+	<requiredUpgrades>
+		<upgrade name="ChaosSpaceMarines/MarkOfTzeentch"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

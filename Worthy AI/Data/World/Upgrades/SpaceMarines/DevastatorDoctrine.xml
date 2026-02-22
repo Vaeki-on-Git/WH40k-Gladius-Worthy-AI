@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="4" icon="Actions/DevastatorDoctrine">
+	<requiredUpgrades>
+		<upgrade name="SpaceMarines/DevastatorSpaceMarine"/>
+		<upgrade name="SpaceMarines/DevastatorCenturion"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="3" icon="Actions/Tau/PurchaseOre">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseOreScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Traits/Homing" visible="0" alwaysVisible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/></player>
+				<weapon>
+					<trait name="Melee"/>
+				</weapon>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

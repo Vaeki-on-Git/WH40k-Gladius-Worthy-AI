@@ -1,0 +1,11 @@
+<trait visible="0" icon="Actions/Shop">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<unit>
+					<trait name="Worthy/Ai_player"/>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

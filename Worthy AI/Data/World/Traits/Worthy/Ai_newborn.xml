@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Actions/TheFleshIsWeak" visible="0" alwaysVisible="0">
+	<perTurnModifiers>
+		<modifier>
+			<conditions>
+			</conditions>
+			<effects>
+				<removeTrait name="Worthy/Ai_newborn"/>
+			</effects>
+		</modifier>
+	</modifiers>
+</trait>

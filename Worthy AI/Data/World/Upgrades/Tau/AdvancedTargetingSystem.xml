@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="9" icon="Actions/Tau/AdvancedTargetingSystem">
+	<requiredUpgrades>
+		<upgrade name="Tau/Vehicles"/>
+		<upgrade name="Tau/MonstrousCreatures"/>
+		<upgrade name="Tau/Commander"/>
+		<upgrade name="Tau/CrisisBattlesuit"/>
+		<upgrade name="Tau/StealthBattlesuit"/>
+		<upgrade name="Tau/Aircraft"/>
+		<upgrade name="Tau/BroadsideBattlesuit"/>		
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseVehiclesScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

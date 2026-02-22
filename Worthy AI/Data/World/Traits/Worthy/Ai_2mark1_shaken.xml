@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Traits/Homing" visible="0" alwaysVisible="0">
+	<modifiers>
+		<modifier>
+			<conditions match="Any">
+				<unit match="Any">
+					<unitsInRange count="2" range="1" >
+						<enemy/>
+						<noTrait name="Invulnerable"/>
+						<noType name="Eldar/WebwayGate"/>
+						<trait name="Shaken"/>
+					</unitsInRange>
+					<unitsInRange count="2" range="1" >
+						<enemy/>
+						<noTrait name="Invulnerable"/>
+						<noType name="Eldar/WebwayGate"/>
+						<trait name="Broken"/>
+					</unitsInRange>
+				</unit>
+				<unit match="All">
+					<unitsInRange count="1" range="1" >
+						<enemy/>
+						<noTrait name="Invulnerable"/>
+						<noType name="Eldar/WebwayGate"/>
+						<trait name="Shaken"/>
+					</unitsInRange>
+					<unitsInRange count="1" range="1" >
+						<enemy/>
+						<noTrait name="Invulnerable"/>
+						<noType name="Eldar/WebwayGate"/>
+						<trait name="Broken"/>
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Traits/HarvestResourceFeatures" category="Debuff" alwaysColored="1" visible="0">
+	<modifiers>
+		<modifier>
+			<conditions match="All">
+				<player><aiControlled/></player>
+				<encounter>
+					<opponent>
+						<noTrait name="Fortification"/>
+						<noTrait name="Vehicle"/>
+					</opponent> 
+				</encounter> 
+			</conditions>
+			<effects>
+				<accuracy min="-999" max="-999"/>
+			</effects>
+		</modifier>
+	</modifiers>
+</trait>
+
+
+

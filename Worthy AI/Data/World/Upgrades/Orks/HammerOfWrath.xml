@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="10" icon="Actions/HammerOfWrath">
+	<requiredUpgrades>
+		<upgrade name="Orks/Beasts"/>
+		<upgrade name="Orks/Gorkanaut"/>
+		<upgrade name="Orks/KillaKan"/>
+		<upgrade name="Orks/Deffkopta"/>
+		<upgrade name="Orks/SquighogBoy"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="0.9"/>
+<increaseVehiclesScore base="0.9"/>
+<increaseSupportScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait category="Debuff" icon="Actions/Eldar/ActivateWebwayGate" visible="0">
+	<modifiers>
+		<modifier visible="0">
+			<conditions>
+				<unit match="Any">
+					<trait name="Worthy/Ai_mark1"/>
+					<trait name="Worthy/Ai_mark2"/>
+					<trait name="Worthy/Ai_mark3"/>
+					<noTrait name="WireWeed"/>
+				</unit>
+			</conditions>
+			<effects>
+				<movementMax max="0"/>
+			</effects>
+		</modifier>
+	</modifiers>
+	<onTraitRemovedModifiers>
+		<modifier visible="0">
+			<effects>
+				<movement min="999"/>
+			</effects>
+		</modifier>
+	</onTraitRemovedModifiers>
+</trait>

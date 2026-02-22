@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="9" icon="Units/Tyranids/Tyrannofex">
+	<requiredUpgrades>
+		<upgrade name="Tyranids/Vehicles"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseVehiclesScore base="1.2"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

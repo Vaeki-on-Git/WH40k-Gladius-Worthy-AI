@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="9" icon="Units/AstraMilitarum/MarauderBomber">
+	<requiredUpgrades>
+		<upgrade name="AstraMilitarum/Aircraft"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseAircraftScore base="0.95"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

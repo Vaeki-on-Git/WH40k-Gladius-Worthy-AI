@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait alwaysVisible="0" category="Debuff" icon="Traits/Tyranids/InstinctiveBehaviourHunt" visible="0">
+	<modifiers>
+		<modifier visible="0">
+			<conditions>
+				<player><aiControlled/></player>
+				<unit>
+					<unitsInRange count="0" range="4">
+						<enemy/>
+						<noType name="Eldar/WebwayGate"/>
+						<noTrait name="Invulnerable"/>
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

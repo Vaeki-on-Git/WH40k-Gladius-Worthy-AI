@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Traits/Homing" visible="0" alwaysVisible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/></player>
+				<unit>
+					<trait name="Worthy/Ai_markX"/>
+				</unit>
+				<unit match="Any">
+					<unitsInRange range="2" count="1">
+						<enemy/>
+						<trait name="City"/>
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

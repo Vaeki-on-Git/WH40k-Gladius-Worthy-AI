@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="5">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="-1"/>
+<increaseVehiclesScore base="-1"/>
+<increaseHeroesScore base="-1"/>
+<increaseAircraftScore base="-1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

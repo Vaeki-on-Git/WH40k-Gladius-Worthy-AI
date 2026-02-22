@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="3" icon="Traits/Orks/BonusColonizersProduction">
+	<requiredUpgrades>
+		<upgrade name="Orks/Colonizers"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseColonizersProductionScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

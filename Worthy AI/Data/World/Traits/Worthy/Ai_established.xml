@@ -1,0 +1,15 @@
+<trait visible="0" icon="Actions/Shop">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<unit>
+					<unitsInRange range="99" count="3">
+						<affiliate/>
+						<type name="ChaosSpaceMarines/Headquarters"/>
+						<trait name="City"/>
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

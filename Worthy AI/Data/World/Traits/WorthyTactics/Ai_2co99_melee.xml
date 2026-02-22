@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Traits/AdeptusMechanicus/CanticlesOfTheOmnissiah" visible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/></player>
+				<unit>
+					<unitsInRange count="2" range="199">
+						<allied/>
+						<trait name="AdeptusMechanicus/CanticlesOfTheOmnissiah"/>
+						<trait name="Worthy/Ai_mark1"/>
+						<trait name="Worthy/Ai_melee"/>
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

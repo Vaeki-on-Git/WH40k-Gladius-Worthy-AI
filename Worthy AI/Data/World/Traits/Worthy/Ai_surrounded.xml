@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait alwaysVisible="0" icon="Traits/LastStand" visible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player>
+					<aiControlled/>
+				</player>
+				<unit>
+					<unitsInRange count="1" range="1">
+						<enemy/>
+						<noType name="Eldar/WebwayGate"/>
+					</unitsInRange>				
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

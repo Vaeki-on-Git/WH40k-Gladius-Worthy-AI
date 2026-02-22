@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait>
+	<modifiers>
+		<modifier>
+			<effects/>
+		</modifier>
+		<modifier>
+			<conditions>
+				<!-- turns weapons off...  -->
+				<!-- if player is ai AND ... -->
+				<player><aiControlled/></player>
+				<encounter>
+					<opponent>
+						<!-- opponent has molten body ... --> 	
+						<trait name="Eldar\MoltenBody"/>
+					</opponent> 
+				</encounter> 
+			</conditions> 
+			<effects>
+				<accuracy min="-999" max="-999"/>
+			</effects>
+		</modifier>
+	</modifiers>
+</trait>

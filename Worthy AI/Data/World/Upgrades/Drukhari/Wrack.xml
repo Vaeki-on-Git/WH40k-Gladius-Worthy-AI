@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="3" icon="Units/Drukhari/Wrack">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="0.96"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

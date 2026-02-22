@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade dlc="Supplement10" position="1" icon="Units/AdeptusMechanicus/SkitariiRanger">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="1"/>
+<increaseSupportScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

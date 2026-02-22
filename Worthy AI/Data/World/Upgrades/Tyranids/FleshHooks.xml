@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="3" icon="Weapons/FleshHooks">
+	<requiredUpgrades>
+		<upgrade name="Tyranids/Heroes"/>
+		<upgrade name="Tyranids/Warrior"/>
+		<upgrade name="Tyranids/Lictor"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

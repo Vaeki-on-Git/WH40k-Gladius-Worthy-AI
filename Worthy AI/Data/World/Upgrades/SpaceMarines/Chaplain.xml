@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="2" icon="Units/SpaceMarines/Chaplain">
+	<requiredUpgrades>
+		<upgrade name="SpaceMarines/Heroes"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseSupportScore base="0"/>
+<increaseHeroesScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

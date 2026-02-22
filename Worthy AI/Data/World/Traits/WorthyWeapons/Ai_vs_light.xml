@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Traits/Swarms" category="Debuff" visible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<!-- turns weapons off...  -->
+				<!-- if player is ai AND ... -->
+				<player><aiControlled/></player>
+				<encounter>
+					<opponent match="Any">
+						<!-- opponent is damaged OR ... --> 	
+						<hitpointsFraction less="0.2"/>
+						<hitpointsFraction equal="0.2"/>
+						<!-- opponent is classed heavy/solo ... --> 	
+						<trait name="Vehicle"/>
+						<trait name="Hero"/>
+						<trait name="MonstrousCreature"/>
+						<trait name="SuperHeavy"/>
+						<trait name="Fortification"/>
+						<trait name="VeryBulky"/>
+					</opponent> 
+				</encounter> 
+			</conditions> 
+			<effects>
+				<accuracy min="-999" max="-999"/>
+			</effects>
+		</modifier>
+	</modifiers>
+</trait>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="4" icon="Traits/AdeptusMechanicus/SoylensAcquisitionTeams">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseFoodScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

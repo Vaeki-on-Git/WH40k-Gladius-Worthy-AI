@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Traits/Homing" visible="0" alwaysVisible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/></player>
+				<unit>
+					<unitsInRange count="2" range="2">
+						<enemy/>
+						<noFaction name="Neutral"/>
+						<noTrait name="Invulnerable"/>
+						<noType name="Eldar/WebwayGate"/>
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

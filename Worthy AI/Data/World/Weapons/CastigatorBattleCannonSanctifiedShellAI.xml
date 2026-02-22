@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<weapon icon="Weapons/CastigatorBattleCannonSanctifiedShell">
+	<model>
+		<projectileWeapon fireInterval="1.0"
+				fireSound="Weapons/CastigatorBattleCannonSanctifiedShell"
+				fireSoundCount="1"
+				muzzleFlashesBlueprint="Effects/CannonMuzzleFlashes"/>
+	</model>
+	<modifiers>
+		<modifier>
+			<effects>
+				<attacks add="1"/>
+				<rangedArmorPenetration add="6"/> <!-- %rangedArmorPenetration add armorPiercing=-3 -->
+				<rangedDamage add="6"/> <!-- %rangedDamage add strength=8 -->
+				<strengthDamage base="0"/>
+			</effects>
+		</modifier>
+	</modifiers>
+	<target rangeMax="3"/>
+	<traits>
+		<trait name="AstraMilitarum/BoltDamage" requiredUpgrade="AstraMilitarum/BoltDamage"/>
+		<trait name="ChaosSpaceMarines/BoltDamage" requiredUpgrade="ChaosSpaceMarines/BoltDamage"/>
+		<trait name="SpaceMarines/BoltDamage" requiredUpgrade="SpaceMarines/BoltDamage"/>
+		<trait name="BoltWeapon"/>
+		<trait name="HeavyWeapon"/>
+		<trait name="Rending"/>
+		
+		<trait name="WorthyWeapons/Pc_disarm"/>
+		<trait name="WorthyWeapons/Ai_vs_heavy"/>
+	</traits>
+</weapon>

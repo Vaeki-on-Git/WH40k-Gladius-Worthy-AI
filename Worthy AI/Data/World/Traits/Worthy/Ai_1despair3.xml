@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Features/Hive" alwaysVisible="0" visible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<unit match="Any">
+					<unitsInRange count="1" range="3">
+						<allied/>
+						<trait name="Shaken"/>
+					</unitsInRange>
+					<unitsInRange count="1" range="3">
+						<allied/>
+						<trait name="Broken"/>
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

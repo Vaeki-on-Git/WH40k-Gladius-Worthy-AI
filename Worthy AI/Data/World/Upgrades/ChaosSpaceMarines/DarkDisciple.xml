@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade dlc="Supplement8" position="2" icon="Units/ChaosSpaceMarines/DarkDisciple">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseSupportScore base="0"/>
+<increaseInfantryScore base="0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

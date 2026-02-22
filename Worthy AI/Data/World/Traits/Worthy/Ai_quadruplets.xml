@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Traits/Tyranids/InfantryUpkeep" visible="0" alwaysVisible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/></player>
+				<unit>
+					<actionPoints greater="0"/>
+					<unitsInRange range="4" count="4">
+						<affiliate/>
+						<type name="Tyranids/Termagant"/>
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

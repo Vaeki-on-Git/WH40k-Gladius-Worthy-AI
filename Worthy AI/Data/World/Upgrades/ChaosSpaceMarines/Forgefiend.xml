@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade dlc="Supplement10" position="6" icon="Units/ChaosSpaceMarines/Forgefiend">
+	<requiredUpgrades>
+		<upgrade name="ChaosSpaceMarines/Vehicles"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseVehiclesScore base="1.05"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

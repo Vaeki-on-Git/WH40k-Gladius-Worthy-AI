@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="8" icon="Traits/Eldar/AircraftBuildingBonus">
+	<requiredUpgrades>
+		<upgrade name="Eldar/Aircraft"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseAircraftProductionScore base="0.8"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

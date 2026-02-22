@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="3" icon="Units/ChaosSpaceMarines/NoctilithCrown" dlc="Supplement4">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

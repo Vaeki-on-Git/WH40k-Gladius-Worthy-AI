@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Attributes/Loyalty" visible="0" alwaysVisible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/></player>
+				<unit>
+					<!-- 2wall1 -->
+					<unitsInRange count="2" range="1" >
+						<ally/>
+						<noTrait name="Invulnerable"/>
+						<noTrait name="Fortification"/>
+					</unitsInRange>
+					<!-- 1hold3 -->
+					<actionPoints greater="0"/>
+					<hitpointsFraction greater="0.6"/>
+					<noTrait name="Worthy/Ai_newborn"/>
+					<unitsInRange count="1" range="3">
+						<enemy/>
+						<noTrait name="Invulnerable"/>
+						<noType name="Eldar/WebwayGate"/>
+					</unitsInRange>
+				</unit>
+			</conditions>
+			<effects>
+				<movementMax max="0"/>
+			</effects>
+		</modifier>
+	</modifiers>
+</trait>

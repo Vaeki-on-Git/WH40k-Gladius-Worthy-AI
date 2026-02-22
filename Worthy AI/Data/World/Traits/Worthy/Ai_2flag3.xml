@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Attributes/Loyalty" visible="0" alwaysVisible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/></player>
+				<unit>
+					<unitsInRange count="2" range="3">
+						<ally/>
+						<trait name="Worthy/Ai_markX"/>
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

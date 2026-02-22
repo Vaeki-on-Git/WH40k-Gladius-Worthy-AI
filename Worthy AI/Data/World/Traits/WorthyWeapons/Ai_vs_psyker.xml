@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Traits/Swarms" category="Debuff" visible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<!-- turns weapons off...  -->
+				<!-- if player is ai AND ... -->
+				<player><aiControlled/></player>
+				<encounter>
+					<opponent match="Any">
+						<!-- opponent isn't psker ... --> 	
+						<noTrait name="Psyker"/>
+					</opponent> 
+				</encounter> 
+			</conditions> 
+			<effects>
+				<accuracy min="-999" max="-999"/>
+			</effects>
+		</modifier>
+	</modifiers>
+</trait>

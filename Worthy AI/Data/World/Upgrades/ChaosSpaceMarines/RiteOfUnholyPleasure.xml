@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="10" icon="Actions/ChaosSpaceMarines/RiteOfUnholyPleasure">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfluenceScore base="0.9"/>
+<increaseLoyaltyScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

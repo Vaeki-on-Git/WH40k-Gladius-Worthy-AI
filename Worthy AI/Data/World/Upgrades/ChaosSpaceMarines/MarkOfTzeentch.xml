@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="5" icon="Actions/ChaosSpaceMarines/MarkOfTzeentch">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseHeroesScore base="0"/>
+<increaseInfantryScore base="0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

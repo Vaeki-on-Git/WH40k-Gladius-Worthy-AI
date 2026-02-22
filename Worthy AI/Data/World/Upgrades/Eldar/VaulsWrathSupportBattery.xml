@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="2" icon="Units/Eldar/VaulsWrathSupportBattery">
+	<requiredUpgrades>
+		<upgrade name="Eldar/Vehicles"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseVehiclesScore base="0.9"/>
+<increaseSupportScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

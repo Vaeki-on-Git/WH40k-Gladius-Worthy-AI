@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="3" icon="Traits/Drukhari/RaidersTacticsDamage">
+	<requiredUpgrades>
+		<upgrade name="Drukhari/Vehicles"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseVehiclesScore base="-1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="6" icon="Units/ChaosSpaceMarines/WarpTalon">
+	<requiredUpgrades>
+		<upgrade name="ChaosSpaceMarines/Infantry"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

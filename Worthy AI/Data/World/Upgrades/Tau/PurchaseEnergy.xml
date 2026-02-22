@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="7" icon="Actions/Tau/PurchaseEnergy">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseEnergyScore base="0.9"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

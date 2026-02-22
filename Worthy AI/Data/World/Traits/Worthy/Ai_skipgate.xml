@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Traits/HarvestResourceFeatures" category="Debuff" alwaysColored="1" visible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/></player>
+				<unit>
+					<unitsInRange range="2" count="1">
+						<enemy/>
+						<noTrait name="Invulnerable"/>
+						<noType name="Eldar/WebwayGate"/>
+					</unitsInRange>
+				</unit>
+				<encounter>
+					<opponent>
+						<type name="Eldar/WebwayGate"/>
+					</opponent> 
+				</encounter> 
+			</conditions>
+			<effects>
+				<accuracy min="-999" max="-999"/>
+			</effects>
+		</modifier>
+	</modifiers>
+</trait>
+
+
+

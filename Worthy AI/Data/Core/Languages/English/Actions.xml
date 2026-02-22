@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+
+	<!-- general imposter actions  --> 
+	<entry name="Worthy/ClearTile"     value="Worthy <string name='Actions/ClearTile'/>"/>
+	<entry name="Worthy/ClearTileDescription" value="<string name='Actions/ClearTileDescription'/>"/>
+
+	<entry name="Worthy/SelfDestruct"      value="Worthy Self Destruct"/>
+	<entry name="Worthy/SelfDestructDescription"  value="This unit will clear itself out of the way to reduce upkeep."/>
+	<entry name="Worthy/SelfDestructFlavor"       value="'Beware the dungeons of Chaos. - Vaeki'"/>
+
+	<!-- SPACE MARINES --> 
+	<entry name="Worthy/Narthecium"     value="Worthy <string name='Actions/Narthecium'/>"/>
+	<entry name="Worthy/NartheciumDescription" value="<string name='Actions/NartheciumDescription'/>"/>
+	<entry name="Worthy/NartheciumFlavor"      value="<string name='Actions/NartheciumFlavor'/>"/>
+
+	<entry name="Worthy/BlessingsOfTheOmnissiah"     value="Worthy <string name='Actions/BlessingsOfTheOmnissiah'/>"/>
+	<entry name="Worthy/BlessingsOfTheOmnissiahDescription" value="<string name='Actions/BlessingsOfTheOmnissiahDescription'/>"/>
+	<entry name="Worthy/BlessingsOfTheOmnissiahFlavor"      value="<string name='Actions/BlessingsOfTheOmnissiahFlavor'/>"/>
+
+	<!-- librarian  --> 
+	<entry name="Worthy/ObjurationMechanicum"     value="Worthy <string name='Actions/ObjurationMechanicum'/>"/>
+	<entry name="Worthy/ObjurationMechanicumDescription" value="<string name='Actions/ObjurationMechanicumDescription'/>"/>
+	<entry name="Worthy/ObjurationMechanicumFlavor"      value="<string name='Actions/ObjurationMechanicumFlavor'/>"/>
+
+	<!-- ADMECH  --> 
+	<entry name="Worthy/MasterOfMachines"     value="Worthy <string name='Actions/AdeptusMechanicus/MasterOfMachines'/>"/>
+	<entry name="Worthy/MasterOfMachinesDescription" value="<string name='Actions/AdeptusMechanicus/MasterOfMachinesDescription'/>"/>
+	<entry name="Worthy/MasterOfMachinesFlavor"      value="<string name='Actions/AdeptusMechanicus/MasterOfMachinesFlavor'/>"/>
+
+	<!-- manipulus imposter actions  --> 
+	<entry name="Worthy/ElectroShocked"     value="Worthy <string name='Actions/AdeptusMechanicus/ElectroShocked'/>"/>
+	<entry name="Worthy/ElectroShockedDescription" value="<string name='Actions/AdeptusMechanicus/ElectroShockedDescription'/>"/>
+	<entry name="Worthy/ElectroShockedFlavor"      value="<string name='Actions/AdeptusMechanicus/ElectroShockedFlavor'/>"/>
+
+	<entry name="Worthy/TechAdept"     value="Worthy <string name='Actions/AdeptusMechanicus/TechAdept'/>"/>
+	<entry name="Worthy/TechAdeptDescription" value="<string name='Actions/AdeptusMechanicus/TechAdeptDescription'/>"/>
+	<entry name="Worthy/TechAdeptFlavor"      value="<string name='Actions/AdeptusMechanicus/TechAdeptFlavor'/>"/>
+
+	<!-- GUARD -->
+	<!-- enginseer  --> 
+	<entry name="Worthy/ConstructImperialStrongpoint"     value="Worthy <string name='Actions/ConstructImperialStrongpoint'/>"/>
+	<entry name="Worthy/ConstructImperialStrongpointDescription" value="<string name='Actions/ConstructImperialStrongpointDescription'/>"/>
+	<entry name="Worthy/ConstructImperialStrongpointFlavor"      value="<string name='Actions/ConstructImperialStrongpointFlavor'/>"/>
+	
+	<entry name="Worthy/ConstructVoidShieldGenerator"     value="Worthy <string name='Actions/ConstructVoidShieldGenerator'/>"/>
+	<entry name="Worthy/ConstructVoidShieldGeneratorDescription" value="<string name='Actions/ConstructVoidShieldGeneratorDescription'/>"/>
+	<entry name="Worthy/ConstructVoidShieldGeneratorFlavor"      value="<string name='Actions/ConstructVoidShieldGeneratorFlavor'/>"/>
+	
+	<entry name="Worthy/BlessingsOfTheOmnissiah"     value="Worthy <string name='Actions/BlessingsOfTheOmnissiah'/>"/>
+	<entry name="Worthy/BlessingsOfTheOmnissiahDescription" value="<string name='Actions/BlessingsOfTheOmnissiahDescription'/>"/>
+	<entry name="Worthy/BlessingsOfTheOmnissiahFlavor"      value="<string name='Actions/BlessingsOfTheOmnissiahFlavor'/>"/>
+
+	<!-- lord commi  --> 
+	<entry name="Worthy/SummaryExecution"     value="Worthy <string name='Actions/SummaryExecution'/>"/>
+	<entry name="Worthy/SummaryExecutionDescription" value="<string name='Actions/SummaryExecutionDescription'/>"/>
+	<entry name="Worthy/SummaryExecutionFlavor"      value="<string name='Actions/SummaryExecutionFlavor'/>"/>
+ 
+	<!-- ORKS--> 
+	<entry name="Worthy/DoksTools"     value="Worthy <string name='Actions/Orks/DoksTools'/>"/>
+	<entry name="Worthy/DoksToolsDescription" value="<string name='Actions/Orks/DoksToolsDescription'/>"/>
+	<entry name="Worthy/DoksToolsFlavor"      value="<string name='Actions/Orks/DoksToolsFlavor'/>"/>
+
+	<entry name="Worthy/CyborkImplants"     value="Worthy <string name='Actions/Orks/CyborkImplants'/>"/>
+	<entry name="Worthy/CyborkImplantsDescription" value="<string name='Actions/Orks/CyborkImplantsDescription'/>"/>
+	<entry name="Worthy/CyborkImplantsFlavor"      value="<string name='Actions/Orks/CyborkImplantsFlavor'/>"/>
+
+	<!-- SISTERS -->
+	<entry name="Worthy/SacredHealing"     value="Worthy <string name='Actions/SistersOfBattle/SacredHealing'/>"/>
+	<entry name="Worthy/SacredHealingDescription" value="<string name='Actions/SistersOfBattle/SacredHealingDescription'/>"/>
+	<entry name="Worthy/SacredHealingFlavor"      value="<string name='Actions/SistersOfBattle/SacredHealingFlavor'/>"/>
+
+	<!-- dialogus -->
+	<entry name="Worthy/CatechismOfRepugnance"     value="Worthy <string name='Actions/SistersOfBattle/CatechismOfRepugnance'/>"/>
+	<entry name="Worthy/CatechismOfRepugnanceDescription" value="<string name='Actions/SistersOfBattle/CatechismOfRepugnanceDescription'/>"/>
+	<entry name="Worthy/CatechismOfRepugnanceFlavor"      value="<string name='Actions/SistersOfBattle/CatechismOfRepugnanceFlavor'/>"/>
+
+	<entry name="Worthy/WarHymn"     value="Worthy <string name='Actions/SistersOfBattle/WarHymn'/>"/>
+	<entry name="Worthy/WarHymnDescription" value="<string name='Actions/SistersOfBattle/WarHymnDescription'/>"/>
+	<entry name="Worthy/WarHymnFlavor"      value="<string name='Actions/SistersOfBattle/WarHymnFlavor'/>"/>
+
+	<!-- canoness -->
+	<entry name="Worthy/DeathBeforeDisgrace"     value="Worthy <string name='Actions/SistersOfBattle/DeathBeforeDisgrace'/>"/>
+	<entry name="Worthy/DeathBeforeDisgraceDescription" value="<string name='Actions/SistersOfBattle/DeathBeforeDisgraceDescription'/>"/>
+	<entry name="Worthy/DeathBeforeDisgraceFlavor"      value="<string name='Actions/SistersOfBattle/DeathBeforeDisgraceFlavor'/>"/>
+
+	<entry name="Worthy/RighteousJudgement"     value="Worthy <string name='Actions/SistersOfBattle/RighteousJudgement'/>"/>
+	<entry name="Worthy/RighteousJudgementDescription" value="<string name='Actions/SistersOfBattle/RighteousJudgementDescription'/>"/>
+	<entry name="Worthy/RighteousJudgementFlavor"      value="<string name='Actions/SistersOfBattle/RighteousJudgementFlavor'/>"/>
+'
+	<!-- TAU imposter actions  --> 
+	<entry name="Worthy/TidewallGunrig"     value="Worthy <string name='Actions/Tau/TidewallGunrig'/>"/>
+	<entry name="Worthy/TidewallGunrigDescription" value="<string name='Actions/Tau/TidewallGunrigDescription'/>"/>
+	<entry name="Worthy/TidewallGunrigFlavor"      value="<string name='Actions/Tau/TidewallGunrigFlavor'/>"/>
+
+	<entry name="Worthy/Repair"     value="Worthy <string name='Actions/Repair'/>"/>
+	<entry name="Worthy/RepairDescription" value="<string name='Actions/RepairDescription'/>"/>
+	<entry name="Worthy/RepairFlavor"      value="<string name='Actions/RepairFlavor'/>"/>
+
+	<!-- TYRANIDS -->
+	<!-- Malanthrope --> 
+	<entry name="Worthy/ConsumeTile" value="Worthy <string name='Actions/Tyranids/ConsumeTile'/>"/>
+	<entry name="Worthy/ConsumeTileDescription" value="<string name='Actions/Tyranids/ConsumeTileDescription'/>"/>
+	<entry name="Worthy/ConsumeTileFlavor" value="<string name='Actions/Tyranids/ConsumeTileFlavor'/>"/>
+
+	<!-- Tervignon --> 
+	<entry name="Worthy/Catalyst" value="Worthy <string name='Actions/Tyranids/Catalyst'/>"/>
+	<entry name="Worthy/CatalystDescription" value="<string name='Actions/Tyranids/CatalystDescription'/>"/>
+	<entry name="Worthy/CatalystFlavor" value="<string name='Actions/Tyranids/CatalystFlavor'/>"/>
+
+	<entry name="Worthy/LivingIncubator"            value="Worthy <string name='Actions/Tyranids/LivingIncubator'/>"/>
+	<entry name="Worthy/LivingIncubatorDescription"        value="<string name='Actions/Tyranids/LivingIncubatorDescription'/>"/>
+	<entry name="Worthy/LivingIncubatorFlavor"             value="<string name='Actions/Tyranids/LivingIncubatorFlavor'/>"/>
+
+	<!-- ELDAR  --> 
+	<entry name="Worthy/Ai_release" value="Worthy Battle Focus"/>
+
+	<entry name="Worthy/LinkedFire"     value="Worthy <string name='Actions/Eldar/LinkedFire'/>"/>
+	<entry name="Worthy/LinkedFireDescription" value="<string name='Actions/Eldar/LinkedFireDescription'/>"/>
+	<entry name="Worthy/LinkedFireFlavor"      value="<string name='Actions/Eldar/LinkedFireFlavor'/>"/>
+
+ 	<!-- farseer imposter actions -->
+	<entry name="Worthy/MindWar"     value="Worthy <string name='Actions/Eldar/MindWar'/>"/>
+	<entry name="Worthy/MindWarDescription" value="<string name='Actions/Eldar/MindWarDescription'/>"/>
+	<entry name="Worthy/MindWarFlavor"      value="<string name='Actions/Eldar/MindWarFlavor'/>"/>
+
+	<entry name="Worthy/Doom"     value="Worthy <string name='Actions/Eldar/Doom'/>"/>
+	<entry name="Worthy/DoomDescription" value="<string name='Actions/Eldar/DoomDescription'/>"/>
+	<entry name="Worthy/DoomFlavor"      value="<string name='Actions/Eldar/DoomFlavor'/>"/>
+
+	<!-- spiritseer imposter actions --> 
+	<entry name="Worthy/ProtectJinx"     value="Worthy <string name='Actions/Eldar/ProtectJinx'/>"/>
+	<entry name="Worthy/ProtectJinxDescription" value="<string name='Actions/Eldar/ProtectJinxDescription'/>"/>
+	<entry name="Worthy/ProtectJinxFlavor"      value="<string name='Actions/Eldar/ProtectJinxFlavor'/>"/>
+
+	<entry name="Worthy/EmboldenHorrify"     value="Worthy <string name='Actions/Eldar/EmboldenHorrify'/>"/>
+	<entry name="Worthy/EmboldenHorrifyDescription" value="<string name='Actions/Eldar/EmboldenHorrifyDescription'/>"/>
+	<entry name="Worthy/EmboldenHorrifyFlavor"      value="<string name='Actions/Eldar/EmboldenHorrifyFlavor'/>"/>
+
+	<entry name="Worthy/Hallucination"     value="Worthy <string name='Actions/Hallucination'/>"/>
+	<entry name="Worthy/HallucinationDescription" value="<string name='Actions/HallucinationDescription'/>"/>
+	<entry name="Worthy/HallucinationFlavor"      value="<string name='Actions/HallucinationFlavor'/>"/>
+
+	<!-- DRUKS -->
+	<!-- archon -->
+	<entry name="Worthy/AncientEvil"            value="Worthy <string name='Actions/Drukhari/AncientEvil'/>"/>
+	<entry name="Worthy/AncientEvilDescription" value="<string name='Actions/Drukhari/AncientEvilDescription'/>"/>
+	<entry name="Worthy/AncientEvilFlavor"      value="<string name='Actions/Drukhari/AncientEvilFlavor'/>"/>
+
+	<entry name="Worthy/SoulHarvest"            value="Worthy <string name='Actions/Drukhari/SoulHarvest'/>"/>
+	<entry name="Worthy/SoulHarvestDescription" value="<string name='Actions/Drukhari/SoulHarvestDescription'/>"/>
+	<entry name="Worthy/SoulHarvestFlavor"      value="<string name='Actions/Drukhari/SoulHarvestFlavor'/>"/>
+
+	<!-- haemonculus -->
+	<entry name="Worthy/Fleshcraft"     value="Worthy <string name='Actions/Drukhari/Fleshcraft'/>"/>
+	<entry name="Worthy/FleshcraftDescription" value="<string name='Actions/Drukhari/FleshcraftDescription'/>"/>
+	<entry name="Worthy/FleshcraftFlavor"      value="<string name='Actions/Drukhari/FleshcraftFlavor'/>"/>
+
+	<entry name="Worthy/CrucibleOfMalediction"     value="Worthy <string name='Actions/Drukhari/CrucibleOfMalediction'/>"/>
+	<entry name="Worthy/CrucibleOfMaledictionDescription" value="<string name='Actions/Drukhari/CrucibleOfMaledictionDescription'/>"/>
+	<entry name="Worthy/CrucibleOfMaledictionFlavor"      value="<string name='Actions/Drukhari/CrucibleOfMaledictionFlavor'/>"/>
+
+	<!-- CHAOS  --> 
+	<entry name="Worthy/ConstructNoctilithCrown"      value="Worthy <string name='Actions/ConstructNoctilithCrown'/>"/>
+	<entry name="Worthy/ConstructNoctilithCrownDescription"  value="<string name='Actions/ConstructNoctilithCrownDescription'/>"/>
+	<entry name="Worthy/ConstructNoctilithCrownFlavor"       value="<string name='Actions/ConstructNoctilithCrownFlavor'/>"/>
+
+	<entry name="Worthy/CultistSacrifice"      value="Worthy <string name='Actions/ChaosSpaceMarines/CultistSacrifice'/>"/>
+	<entry name="Worthy/CultistSacrificeDescription"  value="<string name='Actions/ChaosSpaceMarines/CultistSacrificeDescription'/>"/>
+	<entry name="Worthy/CultistSacrificeFlavor"       value="<string name='Actions/ChaosSpaceMarines/CultistSacrificeFlavor'/>"/>
+
+	<!-- daemon prince imposter actions  --> 
+	<entry name="Worthy/BoonOfMutation"      value="Worthy <string name='Actions/ChaosSpaceMarines/BoonOfMutation'/>"/>
+	<entry name="Worthy/BoonOfMutationDescription"  value="<string name='Actions/ChaosSpaceMarines/BoonOfMutationDescription'/>"/>
+	<entry name="Worthy/BoonOfMutationFlavor"       value="<string name='Actions/ChaosSpaceMarines/BoonOfMutationFlavor'/>"/>
+
+	<!-- chaos lord imposter actions  --> 
+	<entry name="Worthy/IchorBlood"      value="Worthy <string name='Actions/ChaosSpaceMarines/IchorBlood'/>"/>
+	<entry name="Worthy/IchorBloodDescription"  value="<string name='Actions/ChaosSpaceMarines/IchorBloodDescription'/>"/>
+	<entry name="Worthy/IchorBloodFlavor"       value="<string name='Actions/ChaosSpaceMarines/IchorBloodFlavor'/>"/>
+
+	<!-- master of possession imposter actions  --> 
+	<entry name="Worthy/Sacrifice"     value="Worthy <string name='Actions/ChaosSpaceMarines/Sacrifice'/>"/>
+	<entry name="Worthy/SacrificeDescription" value="<string name='Actions/ChaosSpaceMarines/SacrificeDescription'/>"/>
+	<entry name="Worthy/SacrificeFlavor"      value="<string name='Actions/ChaosSpaceMarines/SacrificeFlavor'/>"/>
+
+	<entry name="Worthy/InfernalPower"     value="Worthy <string name='Actions/ChaosSpaceMarines/InfernalPower'/>"/>
+	<entry name="Worthy/InfernalPowerDescription" value="<string name='Actions/ChaosSpaceMarines/InfernalPowerDescription'/>"/>
+	<entry name="Worthy/InfernalPowerFlavor"      value="<string name='Actions/ChaosSpaceMarines/InfernalPowerFlavor'/>"/>
+
+	<!-- warpsmith -->
+	<entry name="Worthy/ShatterDefences"     value="Worthy <string name='Actions/ChaosSpaceMarines/ShatterDefences'/>"/>
+	<entry name="Worthy/ShatterDefencesDescription" value="<string name='Actions/ChaosSpaceMarines/ShatterDefencesDescription'/>"/>
+	<entry name="Worthy/ShatterDefencesFlavor"      value="<string name='Actions/ChaosSpaceMarines/ShatterDefencesFlavor'/>"/>
+	
+	<entry name="Worthy/MasterOfMechanisms"     value="Worthy <string name='Actions/ChaosSpaceMarines/MasterOfMechanisms'/>"/>
+	<entry name="Worthy/MasterOfMechanismsDescription" value="<string name='Actions/ChaosSpaceMarines/MasterOfMechanismsDescription'/>"/>
+	<entry name="Worthy/MasterOfMechanismsFlavor"      value="<string name='Actions/ChaosSpaceMarines/MasterOfMechanismsFlavor'/>"/>
+	
+</language>
+
+

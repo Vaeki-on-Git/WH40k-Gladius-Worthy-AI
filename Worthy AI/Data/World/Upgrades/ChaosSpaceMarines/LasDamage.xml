@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="10" icon="Traits/LasDamage">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseHeroesScore base="0.8"/>
+<increaseAircraftScore base="0.8"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

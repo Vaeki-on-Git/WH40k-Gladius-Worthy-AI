@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade dlc="Supplement15" position="2" icon="Units/SpaceMarines/PrimarisIntercessor">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseInfantryScore base="0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait icon="Actions/AssaultDoctrine"  visible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<player><aiControlled/></player>
+				<unit>
+					<unitsInRange count="2" range="199">
+						<affiliate/>
+						<type name="SpaceMarines/AssaultSpaceMarine"/>
+						<trait name="Worthy/Ai_markX"/>
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>

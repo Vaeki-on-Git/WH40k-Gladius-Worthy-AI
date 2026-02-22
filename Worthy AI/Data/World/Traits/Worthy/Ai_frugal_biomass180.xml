@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait category="Debuff" icon="Traits/Tyranids/InstinctiveBehaviourHunt" visible="0">
+	<modifiers>
+		<modifier visible="0">
+			<conditions>
+				<player>
+					<aiControlled/>
+					<influence less="180"/>
+				</player>
+			</conditions>
+			<effects>
+				<biomassCost add="64"/>
+			</effects>
+		</modifier>
+	</modifiers>
+</trait>

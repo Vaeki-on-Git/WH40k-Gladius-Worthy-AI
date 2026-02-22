@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="2" icon="Buildings/Tyranids/Vehicles">
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseVehiclesProductionScore base="1.1"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</>

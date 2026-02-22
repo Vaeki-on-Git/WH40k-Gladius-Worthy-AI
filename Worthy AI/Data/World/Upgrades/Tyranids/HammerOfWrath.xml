@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="9" icon="Actions/HammerOfWrath">
+	<requiredUpgrades>
+		<upgrade name="Tyranids/Aircraft"/>
+		<upgrade name="Tyranids/Exocrine"/>
+		<upgrade name="Tyranids/Gargoyle"/>
+		<upgrade name="Tyranids/Haruspex"/>
+		<upgrade name="Tyranids/HiveTyrant"/>
+		<upgrade name="Tyranids/Maleceptor"/>
+		<upgrade name="Tyranids/NornEmissary"/>
+		<upgrade name="Tyranids/ScythedHierodule"/>
+		<upgrade name="Tyranids/Tervigon"/>
+		<upgrade name="Tyranids/Trygon"/>
+		<upgrade name="Tyranids/Tyrannofex"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+<increaseHeroesScore base="1.2"/>
+<increaseVehiclesScore base="1.2"/>
+<increaseAircraftScore base="1.2"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+
+</upgrade>

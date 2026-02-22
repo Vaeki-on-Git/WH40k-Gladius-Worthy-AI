@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+	<!-- worthy weapons -->
+
+	<entry name="MacroPlasmaIncineratorStandardPC"       value="<string name='Weapons/MacroPlasmaIncineratorStandard'/>"/>
+	<entry name="MacroPlasmaIncineratorStandardPCFlavor" value="<string name='Weapons/MacroPlasmaIncineratorStandardFlavor'/>"/>
+	<entry name="MacroPlasmaIncineratorStandardAI"       value="WorthyAI <string name='Weapons/MacroPlasmaIncineratorStandard'/>"/>
+	<entry name="MacroPlasmaIncineratorStandardAIFlavor" value="<string name='Weapons/MacroPlasmaIncineratorStandardFlavor'/>"/>
+
+	<entry name="MacroPlasmaIncineratorSuperchargedPC"       value="<string name='Weapons/MacroPlasmaIncineratorSupercharged'/>"/>
+	<entry name="MacroPlasmaIncineratorSuperchargedPCFlavor" value="<string name='Weapons/MacroPlasmaIncineratorSuperchargedFlavor'/>"/>
+	<entry name="MacroPlasmaIncineratorSuperchargedAI"       value="WorthyAI <string name='Weapons/MacroPlasmaIncineratorSupercharged'/>"/>
+	<entry name="MacroPlasmaIncineratorSuperchargedAIFlavor" value="<string name='Weapons/MacroPlasmaIncineratorSuperchargedFlavor'/>"/>
+
+	<entry name="PlasmaExterminatorStandardPC"       value="<string name='Weapons/PlasmaExterminatorStandard'/>"/>
+	<entry name="PlasmaExterminatorStandardPCFlavor" value="<string name='Weapons/PlasmaExterminatorStandardFlavor'/>"/>
+	<entry name="PlasmaExterminatorStandardAI"       value="WorthyAI <string name='Weapons/PlasmaExterminatorStandard'/>"/>
+	<entry name="PlasmaExterminatorStandardAIFlavor" value="<string name='Weapons/PlasmaExterminatorStandardFlavor'/>"/>
+
+	<entry name="PlasmaExterminatorSuperchargedPC"       value="<string name='Weapons/PlasmaExterminatorSupercharged'/>"/>
+	<entry name="PlasmaExterminatorSuperchargedPCFlavor" value="<string name='Weapons/PlasmaExterminatorSuperchargedFlavor'/>"/>
+	<entry name="PlasmaExterminatorSuperchargedAI"       value="WorthyAI <string name='Weapons/PlasmaExterminatorSupercharged'/>"/>
+	<entry name="PlasmaExterminatorSuperchargedAIFlavor" value="<string name='Weapons/PlasmaExterminatorSuperchargedFlavor'/>"/>
+
+	<entry name="PlasmaIncineratorStandardPC"       value="<string name='Weapons/PlasmaIncineratorStandard'/>"/>
+	<entry name="PlasmaIncineratorStandardPCFlavor" value="<string name='Weapons/PlasmaIncineratorStandardFlavor'/>"/>
+	<entry name="PlasmaIncineratorStandardAI"       value="WorthyAI <string name='Weapons/PlasmaIncineratorStandard'/>"/>
+	<entry name="PlasmaIncineratorStandardAIFlavor" value="<string name='Weapons/PlasmaIncineratorStandardFlavor'/>"/>
+
+	<entry name="PlasmaIncineratorSuperchargedPC"       value="<string name='Weapons/PlasmaIncineratorSupercharged'/>"/>
+	<entry name="PlasmaIncineratorSuperchargedPCFlavor" value="<string name='Weapons/PlasmaIncineratorSuperchargedFlavor'/>"/>
+	<entry name="PlasmaIncineratorSuperchargedAI"       value="WorthyAI <string name='Weapons/PlasmaIncineratorSupercharged'/>"/>
+	<entry name="PlasmaIncineratorSuperchargedAIFlavor" value="<string name='Weapons/PlasmaIncineratorSuperchargedFlavor'/>"/>
+
+	<entry name="FragMissileLauncherPC"          value="<string name='Weapons/FragMissileLauncher'/>"/>
+	<entry name="FragMissileLauncherPCFlavor"    value="<string name='Weapons/FragMissileLauncherFlavor'/>"/>
+	<entry name="FragMissileLauncherAI" value="WorthyAI <string name='Weapons/FragMissileLauncher'/>"/>
+	<entry name="FragMissileLauncherAIFlavor"    value="<string name='Weapons/FragMissileLauncherFlavor'/>"/>
+
+	<entry name="KrakMissileLauncherPC"          value="<string name='Weapons/KrakMissileLauncher'/>"/>
+	<entry name="KrakMissileLauncherPCFlavor"    value="<string name='Weapons/KrakMissileLauncherFlavor'/>"/>
+	<entry name="KrakMissileLauncherAI" value="WorthyAI <string name='Weapons/KrakMissileLauncher'/>"/>
+	<entry name="KrakMissileLauncherAIFlavor"    value="<string name='Weapons/KrakMissileLauncherFlavor'/>"/>
+	
+	<entry name="HuntingLanceFragTipPC"          value="<string name='Weapons/HuntingLanceFragTip'/>"/>
+	<entry name="HuntingLanceFragTipPCFlavor"    value="<string name='Weapons/HuntingLanceFragTipFlavor'/>"/>
+	<entry name="HuntingLanceFragTipAI" value="WorthyAI <string name='Weapons/HuntingLanceFragTip'/>"/>
+	<entry name="HuntingLanceFragTipAIFlavor"    value="<string name='Weapons/HuntingLanceFragTipFlavor'/>"/>
+	             
+	<entry name="HuntingLanceMeltaTipPC"          value="<string name='Weapons/HuntingLanceMeltaTip'/>"/>
+	<entry name="HuntingLanceMeltaTipPCFlavor"    value="<string name='Weapons/HuntingLanceMeltaTipFlavor'/>"/>
+	<entry name="HuntingLanceMeltaTipAI" value="WorthyAI <string name='Weapons/HuntingLanceMeltaTip'/>"/>
+	<entry name="HuntingLanceMeltaTipAIFlavor"    value="<string name='Weapons/HuntingLanceMeltaTipFlavor'/>"/>
+
+	<entry name="HeatRayFocusedPC"            value="<string name='Weapons/HeatRayFocused'/>"/>
+	<entry name="HeatRayFocusedPC"            value="<string name='Weapons/HeatRayFocusedFlavor'/>"/>
+	<entry name="HeatRayFocusedAI"   value="WorthyAI <string name='Weapons/HeatRayFocused'/>"/>
+	<entry name="HeatRayFocusedAI"            value="<string name='Weapons/HeatRayFocusedFlavor'/>"/>
+
+	<entry name="HeatRayDispersedPC"          value="<string name='Weapons/HeatRayDispersed'/>"/>
+	<entry name="HeatRayDispersedPC"          value="<string name='Weapons/HeatRayDispersedFlavor'/>"/>
+	<entry name="HeatRayDispersedAI" value="WorthyAI <string name='Weapons/HeatRayDispersed'/>"/>
+	<entry name="HeatRayDispersedAI"          value="<string name='Weapons/HeatRayDispersedFlavor'/>"/>
+
+	<entry name="AssaultCannonPC"          value="<string name='Weapons/AssaultCannon'/>"/>
+	<entry name="AssaultCannonPCFlavor"    value="<string name='Weapons/AssaultCannonFlavor'/>"/>
+	<entry name="AssaultCannonAI" value="WorthyAI <string name='Weapons/AssaultCannon'/>"/>
+	<entry name="AssaultCannonAIFlavor"    value="<string name='Weapons/AssaultCannonFlavor'/>"/>
+
+	<entry name="HeavyFlamerPC"            value="<string name='Weapons/HeavyFlamer'/>"/>
+	<entry name="HeavyFlamerPCFlavor"      value="<string name='Weapons/HeavyFlamerFlavor'/>"/>
+	<entry name="HeavyFlamerAI" value="WorthyAI <string name='Weapons/HeavyFlamer'/>"/>
+	<entry name="HeavyFlamerAIFlavor"    value="<string name='Weapons/HeavyFlamerFlavor'/>"/>
+
+	<entry name="PrismCannonLancePC"  value="<string name='Weapons/PrismCannonLance'/>"/>
+	<entry name="PrismCannonLancePC"  value="<string name='Weapons/PrismCannonLanceFlavor'/>"/>
+	<entry name="PrismCannonLanceAI" value="WorthyAI <string name='Weapons/PrismCannonLance'/>"/>
+	<entry name="PrismCannonLanceAI"          value="<string name='Weapons/PrismCannonLanceFlavor'/>"/>
+
+	<entry name="PrismCannonFocusedPC" value="<string name='Weapons/PrismCannonFocused'/>"/>
+	<entry name="PrismCannonFocusedPC" value="<string name='Weapons/PrismCannonFocusedFlavor'/>"/>
+	<entry name="PrismCannonFocusedAI" value="WorthyAI <string name='Weapons/PrismCannonFocused'/>"/>
+	<entry name="PrismCannonFocusedAI"          value="<string name='Weapons/PrismCannonFocusedFlavor'/>"/>
+
+	<entry name="PrismCannonDispersedPC" value="<string name='Weapons/PrismCannonDispersed'/>"/>
+	<entry name="PrismCannonDispersedPC" value="<string name='Weapons/PrismCannonDispersedFlavor'/>"/>
+
+
+
+	<entry name="ReaperLauncherStarshotMissilePC"  value="<string name='Weapons/ReaperLauncherStarshotMissile'/>"/>
+	<entry name="ReaperLauncherStarshotMissilePC"  value="<string name='Weapons/ReaperLauncherStarshotMissileFlavor'/>"/>
+	<entry name="ReaperLauncherStarshotMissileAI" value="WorthyAI <string name='Weapons/ReaperLauncherStarshotMissile'/>"/>
+	<entry name="ReaperLauncherStarshotMissileAI"          value="<string name='Weapons/ReaperLauncherStarshotMissileFlavor'/>"/>
+
+	<entry name="ReaperLauncherStarswarmMissilePC" value="<string name='Weapons/ReaperLauncherStarswarmMissile'/>"/>
+	<entry name="ReaperLauncherStarswarmMissilePC" value="<string name='Weapons/ReaperLauncherStarswarmMissileFlavor'/>"/>
+	<entry name="ReaperLauncherStarswarmMissileAI" value="WorthyAI <string name='Weapons/ReaperLauncherStarswarmMissile'/>"/>
+	<entry name="ReaperLauncherStarswarmMissileAI"          value="<string name='Weapons/ReaperLauncherStarswarmMissileFlavor'/>"/>
+	
+	<entry name="CastigatorBattleCannonPyreShellPC"          value="<string name='Weapons/CastigatorBattleCannonPyreShell'/>"/>
+	<entry name="CastigatorBattleCannonPyreShellPCFlavor"    value="<string name='Weapons/CastigatorBattleCannonPyreShellFlavor'/>"/>
+	<entry name="CastigatorBattleCannonPyreShellAI" value="WorthyAI <string name='Weapons/CastigatorBattleCannonPyreShell'/>"/>
+	<entry name="CastigatorBattleCannonPyreShellAIFlavor"    value="<string name='Weapons/CastigatorBattleCannonPyreShellFlavor'/>"/>
+
+	<entry name="CastigatorBattleCannonSanctifiedShellPC"          value="<string name='Weapons/CastigatorBattleCannonSanctifiedShell'/>"/>
+	<entry name="CastigatorBattleCannonSanctifiedShellPCFlavor"    value="<string name='Weapons/CastigatorBattleCannonSanctifiedShellFlavor'/>"/>
+	<entry name="CastigatorBattleCannonSanctifiedShellAI" value="WorthyAI <string name='Weapons/CastigatorBattleCannonSanctifiedShell'/>"/>
+	<entry name="CastigatorBattleCannonSanctifiedShellAIFlavor"    value="<string name='Weapons/CastigatorBattleCannonSanctifiedShellFlavor'/>"/>
+	
+</language>
+
+
