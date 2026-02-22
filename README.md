@@ -1,4 +1,4 @@
-On Windows, place an uncompressed copy of the ".\Worthy AI\" directory and subdirectories into your Mods directory into: 
+On Windows, place an uncompressed copy of the ".\Worthy AI\" directory and subdirectories into your Mods directory: 
 .\Documents\Proxy Studios\Gladius\Mods
 
 Enjoy! 
